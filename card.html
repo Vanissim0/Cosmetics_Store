@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Maroon</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="layout">
+  <header class="header">
+    <button class="header__menu-button" aria-label="Меню"></button><a class="logo" href="index.html" aria-label="Логотип Maroon"></a>
+    <nav class="header__navigation navigation">
+      <div class="navigation__overlay"></div>
+      <div class="navigation__content">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">О нас</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="navigation__contacts social social_for-menu">
+          <li class="social__item social__item_minor-spaced"><a class="social__link" href="#" aria-label="Facebook"></a></li>
+          <li class="social__item social__item_minor-spaced"><a class="social__link" href="#" aria-label="Instagram"></a></li>
+          <li class="social__item social__item_minor-spaced"><a class="social__link" href="#" aria-label="Twitter"></a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="header__actions user-actions">
+      <li class="user-actions__item"><a class="user-actions__link user-actions__user" href="#" aria-label="Пользователь"></a></li>
+      <li class="user-actions__item"><a class="user-actions__link user-actions__cart" href="#" aria-label="Корзина"></a></li>
+    </ul>
+  </header>
+  <main class="main main_top-spaced">
+    <section class="card">
+      <div class="card__wrapper">
+        <div class="card__image-wrapper">
+          Rose - крем для лица
+        </div>
+        <div class="card__content">
+          <h1 class="card__content-title">Rose <small>крем для лица</small></h1>
+          <div class="card__text">
+            <p>Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.</p>
+            <p>Крем равномерно распределяется по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток.</p>
+          </div>
+          <ul class="card__info">
+            <li class="card__accordion accordion">
+              <div class="card__accordion-head">
+                <h2 class="card__accordion-title">Состав</h2>
+                <button class="card__accordion-toggler accordion__toggler" type="button" aria-label="Открыть"><span class="accordion__toggler-icon"></span></button>
+              </div>
+              <div class="card__accordion-content accordion__content">
+                <p class="card__accordion-text accordion__inner">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene
+                  Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower
+                  Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+              </div>
+            </li>
+            <li class="card__accordion accordion">
+              <div class="card__accordion-head">
+                <h2 class="card__accordion-title">Способ применения</h2>
+                <button class="card__accordion-toggler accordion__toggler" type="button" aria-label="Открыть"><span
+                    class="accordion__toggler-icon"></span></button>
+              </div>
+              <div class="card__accordion-content accordion__content">
+                <div class="card__accordion-text accordion__inner">Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями, избегая области вокруг глаз. Подходит для дневного и ночного ухода.</div>
+              </div>
+            </li>
+          </ul>
+          <form class="card__options" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="card__option">
+              <p class="card__option-title">Объем:</p>
+              <ul class="card__option-list">
+                <li class="card__option-item">
+                  <input class="card__input-radio visually-hidden" id="50ml" type="radio" name="volume" value="50ml"
+                    checked>
+                  <label class="card__radio" for="50ml">50ml</label>
+                </li>
+                <li class="card__option-item">
+                  <input class="card__input-radio visually-hidden" id="30ml" type="radio" name="volume" value="30ml">
+                  <label class="card__radio" for="30ml">30ml</label>
+                </li>
+              </ul>
+            </div>
+            <div class="card__price"><span>890 ₽</span>
+              <button class="card__button" id="card-submit" type="submit">Добавить в корзину</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="catalog-history">
+      <div class="catalog-history__wrapper">
+        <h2>Вам также может понравиться</h2>
+        <ul class="catalog-history__list">
+          <li class="catalog-history__item product"><a class="product__link" href="#">
+              Clean - маска для лица
+              <div class="product__wrapper">
+                <div class="product__text">
+                  <h3 class="product__title">Clean</h3><span class="product__price">490 ₽</span>
+                </div>
+                <div class="product__text">
+                  <div class="product__description">маска для лица</div>
+                  <div class="product__description">100g</div>
+                </div>
+              </div>
+            </a></li>
+          <li class="catalog-history__item product"><a class="product__link" href="#">
+              Lotos - маска для лица
+              <div class="product__wrapper">
+                <div class="product__text">
+                  <h3 class="product__title">Lotos</h3><span class="product__price">890 ₽</span>
+                </div>
+                <div class="product__text">
+                  <div class="product__description">маска для лица</div>
+                  <div class="product__description">50ml</div>
+                </div>
+              </div>
+            </a></li>
+          <li class="catalog-history__item product"><a class="product__link" href="#">
+              Lavender - мыло ручной работы
+              <div class="product__wrapper">
+                <div class="product__text">
+                  <h3 class="product__title">Lavender</h3><span class="product__price">290 ₽</span>
+                </div>
+                <div class="product__text">
+                  <div class="product__description">мыло ручной работы</div>
+                  <div class="product__description">50g</div>
+                </div>
+              </div>
+            </a></li>
+          <li class="catalog-history__item product"><a class="product__link" href="#">
+              Coconut - масло для тела
+              <div class="product__wrapper">
+                <div class="product__text">
+                  <h3 class="product__title">Coconut</h3><span class="product__price">990 ₽</span>
+                </div>
+                <div class="product__text">
+                  <div class="product__description">масло для тела</div>
+                  <div class="product__description">300ml</div>
+                </div>
+              </div>
+            </a></li>
+        </ul>
+        <div class="pagination">
+          <div class="pagination__numbers"><span class="pagination__number"><a class="pagination__number-link pagination__number-link_current" href="#" aria-label="Первая страница">1</a></span><span class="pagination__number"><a class="pagination__number-link" href="#" aria-label="Третья страница (последняя)">3</a></span></div>
+          <div class="pagination__arrows"><a class="pagination__arrow" href="#" aria-label="Предыдущая страница"></a><a class="pagination__arrow" href="#" aria-label="Следующая страница"></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__content-inner wrapper"><a class="logo" href="index.html" aria-label="Логотип Maroon"></a>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="catalog.html">Каталог</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">О нас</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Магазины</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+        </ul>
+        <ul class="social-list">
+          <li class="social-item"><a href="https://www.facebook.com/" aria-label="Facebook"></a></li>
+          <li class="social-item"><a href="https://www.instagram.com/" aria-label="Instagram"></a></li>
+          <li class="social-item"><a href="https://twitter.com/" aria-label="Twitter"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <div class="footer__copyright-inner wrapper">
+        <p>Maroon Ⓒ 2023 Все права защищены</p>
+        <p><a class="footer__copyright-link" href="#">Политика конфиденциальности</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
